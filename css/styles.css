@@ -327,13 +327,7 @@ section .home {
     margin: 0 auto;
 }
 
-.open-items .cart-price {
-    font-size: 18px;
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-}
+
 
 .open-items .total-price {
     margin-top: 20px;
