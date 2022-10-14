@@ -37,39 +37,39 @@ SocialLinkTag.forEach(social => {
 searchBtn.addEventListener('click', click)
 
 function click() {
-     if(searchInput.classList.contains('search')) {
-       searchInput.classList.toggle('open')
-    } 
-    
-    if(searchIcon.classList.contains('logo')) {
-        searchIcon.classList.toggle('search-logo')
-    }
-    cartItems.classList.remove('open-items')
-    responsiveNav.classList.remove('open-nav')
+    if(searchInput.classList.contains('search')) {
+      searchInput.classList.toggle('open')
+   } 
+   
+   if(searchIcon.classList.contains('logo')) {
+       searchIcon.classList.toggle('search-logo')
+   }
+   cartItems.classList.remove('open-items')
+   responsiveNav.classList.remove('open-nav')
 };
 
 //TOGGLING THE CART BUTTON
 cartBtn.addEventListener('click', cart)
 
 function cart() {
-    if(cartItems.classList.contains('cart-items')) {
-        cartItems.classList.toggle('open-items')
-    }
-    searchInput.classList.remove('open')
-    searchIcon.classList.remove('search-logo')
-    responsiveNav.classList.remove('open-nav')
+   if(cartItems.classList.contains('cart-items')) {
+       cartItems.classList.toggle('open-items')
+   }
+   searchInput.classList.remove('open')
+   searchIcon.classList.remove('search-logo')
+   responsiveNav.classList.remove('open-nav')
 }
 
 // TOGGLING MENU BUTTON FOR SMALLER SCREENS
 menuBtn.addEventListener('click', navOpen) 
 
 function navOpen() {
-   if(responsiveNav.classList.contains('responsive-nav')) {
-        responsiveNav.classList.toggle('open-nav')
-   }
-    searchInput.classList.remove('open')
-    searchIcon.classList.remove('search-logo')
-    cartItems.classList.remove('open-items')
+  if(responsiveNav.classList.contains('responsive-nav')) {
+       responsiveNav.classList.toggle('open-nav')
+  }
+   searchInput.classList.remove('open')
+   searchIcon.classList.remove('search-logo')
+   cartItems.classList.remove('open-items')
 };
 
 // ADDING THE CART EVENT LISTENER TO THE COUNT
@@ -77,10 +77,10 @@ cartCount.addEventListener('click', cart)
 
 // ADD ITEM BUTTON EVENT LISTENER
 add.forEach(btn => {
-    btn.addEventListener('click', addItem)
-    function addItem() {
-        btn.innerText = 'ITEM ADDED !';
-    }
+   btn.addEventListener('click', addItem)
+   function addItem() {
+       btn.innerText = 'ITEM ADDED !';
+   }
 })
 
 // FUNCTION ADDING ITEMS TO CART
