@@ -38,24 +38,14 @@ searchBtn.addEventListener('click', click)
 
 function click() {
      if(searchInput.classList.contains('search')) {
-        searchInput.classList.remove('search');
-        searchInput.classList.add('open');
-        cartBtn.removeEventListener('click', cart)
-        menuBtn.removeEventListener('click', navOpen)
-    } else {
-        searchInput.classList.add('search');
-        searchInput.classList.add('open');
-        cartBtn.addEventListener('click', cart)
-        menuBtn.addEventListener('click', navOpen)
+       searchInput.classList.toggle('open')
     } 
     
     if(searchIcon.classList.contains('logo')) {
-        searchIcon.classList.remove('logo');
-        searchIcon.classList.add('search-logo');
-    } else {
-        searchIcon.classList.add('logo')
-        searchIcon.classList.add('search-logo');
+        searchIcon.classList.toggle('search-logo')
     }
+    cartItems.classList.remove('open-items')
+    responsiveNav.classList.remove('open-nav')
 };
 
 //TOGGLING THE CART BUTTON
@@ -63,16 +53,11 @@ cartBtn.addEventListener('click', cart)
 
 function cart() {
     if(cartItems.classList.contains('cart-items')) {
-        cartItems.classList.remove('cart-items')
-        cartItems.classList.add('open-items')
-        searchBtn.removeEventListener('click', click)
-        menuBtn.removeEventListener('click', navOpen)
-    } else {
-        cartItems.classList.add('cart-items')
-        cartItems.classList.add('open-items')
-        searchBtn.addEventListener('click', click)
-        menuBtn.addEventListener('click', navOpen)
+        cartItems.classList.toggle('open-items')
     }
+    searchInput.classList.remove('open')
+    searchIcon.classList.remove('search-logo')
+    responsiveNav.classList.remove('open-nav')
 }
 
 // TOGGLING MENU BUTTON FOR SMALLER SCREENS
@@ -82,14 +67,9 @@ function navOpen() {
    if(responsiveNav.classList.contains('responsive-nav')) {
         responsiveNav.classList.toggle('open-nav')
    }
-
-   if(responsiveNav.classList.contains('open-nav')) {
-        searchBtn.removeEventListener('click', click)
-        cartBtn.removeEventListener('click', cart)
-    } else {
-        searchBtn.addEventListener('click', click)
-        cartBtn.addEventListener('click', cart)
-    }
+    searchInput.classList.remove('open')
+    searchIcon.classList.remove('search-logo')
+    cartItems.classList.remove('open-items')
 };
 
 // ADDING THE CART EVENT LISTENER TO THE COUNT
