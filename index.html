@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Coffee Store</title>
+</head>
+<body>
+    <div class="header-contianer">
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <nav class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#our-menu">Menu</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </nav>
+            <div class="icons">
+                <i class="uil uil-search" id="search-btn"></i>
+                <i class="uil uil-shopping-cart cart"></i>
+                <p class="cart-count">0</p>
+                <i class="uil uil-bars menu"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="search-input">
+        <i class="uil uil-search logo"></i>
+        <input class="search" type="text">
+    </div>
+
+    <div class="cart-items">
+        <div class="cart-item-header">
+            <div class="item">
+                <h3>ITEMS</h3>
+            </div>
+            <div class="item-price">
+                <h3>PRICE</h3>
+            </div>
+            <div class="item-quantity">
+                <h3>QUANTITY</h3>
+            </div>
+        </div>
+        <div class="cart-contents">
+            <!-- <div class="cart-item-one">
+                <div class="item-start">
+                    <img src="images/cart-item-1.png" alt="pic">
+                    <p>cart Item 01</p>
+                </div>  
+                <p class="cart-price">#220</p>
+                <div class="item-end">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <i class="uil uil-times cancel"></i>
+                </div>  
+            </div> -->
+
+            <!-- <div class="cart-item-one">
+                <div class="item-start">
+                    <img src="images/cart-item-1.png" alt="pic">
+                    <p>cart Item 09</p>
+                </div>  
+                <span class="cart-price">#220</span>
+                <div class="item-end">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <i class="uil uil-times cancel"></i>
+                </div>  
+            </div>
+
+            <div class="cart-item-one">
+                <div class="item-start">
+                    <img src="images/cart-item-1.png" alt="pic">
+                    <p>cart Item 06</p>
+                </div>  
+                <span class="cart-price">#220</span>
+                <div class="item-end">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <i class="uil uil-times cancel"></i>
+                </div>  
+            </div> -->
+        </div>
+
+        <hr class="line">
+
+        <div class="total-price">
+            <p>Total</p>
+            <span class="cart-total-price">#0</span>
+        </div>
+      
+        <div class="buy">
+            <button class="purchase">PURCHASE</button>
+        </div> 
+    </div>
+
+    <div class="responsive-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#our-menu">Menu</a></li>
+        <li><a href="#learn-more">Learn More</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </div>
+
+    <section class="home-section">
+        <div class="home-text">
+            <p class="head">LIFE IS BETTER<br>WITH COFFEEE</p>
+            <p class="head-text">Our love for specialty coffee is never-ending. Working with the best growers as only the best beans make the grade, so you can start your morning with a fresh glass of coffee to make your day better</p>
+            <button>Get it Now</button>
+        </div> 
+
+        <div class="home">
+            <img src="images/home-img.jpeg" alt="cup">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1>ABOUT US</h1>
+        <div class="container">
+            <div class="about-writing">
+                <p>We are obsessed with brewing the best coffee around the world for you to mqke you feel important and leave feeling better than when you came in, as coffee can be sourced in a way that makes lives better.</p>
+            </div>
+            <div class="about-img">
+                <img src="images/wp11391340.webp">
+            </div>
+        </div>
+    </section>
+
+    <section class="our-menu" id="our-menu">
+        <h1>OUR MENU</h1>
+        <div class="menu-container">
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffee1-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p>Instant qulaity coffee</p>
+                    <span>#800</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffee2-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p>The Giving Coffee</p>
+                    <span>#500</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffee7-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p class="cart-title">Pathway Coffee</p>
+                    <span>#700</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffe6-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p class="cart-title ">Union Bundle Coffee</p>
+                    <span>#900</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffe5-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p class="cart-title">Valvin Black Coffee</p>
+                    <span>#300</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffee9-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p class="cart-title">Coffee Bros</p>
+                    <span>#600</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffee10-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p class="cart-title">Dark Roast Coffee</p>
+                    <span>#800</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffee11-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p class="cart-title">Bokar Coffee</p>
+                    <span>#700</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="menu-one">
+                <div class="menu-pic">
+                    <img src="images/coffee12-removebg-preview.png" class="img-menu">
+                </div>
+                <div class="menu-text">
+                    <p class="cart-title">Brooklyn Coffee</p>
+                    <span>#500</span>
+                </div>
+                <div class="menu-button">
+                    <button class="add">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learn-more" id="learn-more">
+        <h1>LEARN MORE</h1>
+        <p>Get to know your type of  cofeee</p>
+
+    <!--<div class="coffee-search-box">
+            <input type="text" class="search-control" placeholder="Enter a type coffee" id="search-input">
+            <button type="submit" class="search-btn-two btn" id="search-btn">
+                <i class="uil uil-search"></i>
+            </button>
+        </div>
+ -->
+        <div class="coffee-result">
+            <div id="coffee-container">
+                    <!--meal item-->
+    <!--        <div class="coffee-items">
+                        <div class="coffee-img">
+                            <img src="images/istockphoto-145835173-612x612.jpg" alt="food">
+                        </div>
+                        <div class="coffee-name">
+                            <h3>Black</h3>
+                            <button class="description-btn">Description</button>
+                        </div>
+                </div>  -->
+            </div>        
+                        <!-- end of meal item -->
+
+            <div class="coffee-details">
+                <!-- recipe close btn -->
+                 <div class="close-btn">
+                    <i class="fas fa-times" id="description-close-btn" ></i>
+                </div>
+
+                    <!-- meal content -->
+                    <div class="coffee-details-content">
+<!--                <h2 class="coffee-name-two">Black</h2>
+                        <div class="coffee-description">
+                            <h2>Description</h2>
+                            <p>"As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam. It can be ordered plain or with a flavor shot of anything from vanilla to pumpkin spice.",
+                            </p>
+                        </div>
+                        <div class="coffee-ingredients">
+                            <h2>Ingredients</h2>
+                            <p>milk</p>
+                        </div> -->
+                    </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="reviews-writing">
+            <h1>REVIEWS</h1>
+            <p>Here's what our customers have to say about us</p>
+        </div>
+        <div class="review-container">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/4.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Dami</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/3.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Femi</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/5.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Victoria</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/2.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">David</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/7.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Micheal</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/8.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Deborah</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/1.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Tosin</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/4.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Chioma</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="images/3.jpg" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="review-name">Mustapha</h2>
+                                <p class="review-text">
+                                    Some might call this coffee blend a “sleeper” because you wouldn’t expect to be so delicious. I’ve never experienced a roast darker than this blend (yet). I’ll be honest… I drink this one daily.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h1>GET IN TOUCH</h1>
+        <form action="">
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="tel" placeholder="Phone Number">
+            </div>
+            <input type="submit" value="Contact Now" class="btn">
+        </form>
+    </section>
+
+    <footer>
+        <div class="share">
+            <a href="#"><i class="fab fa-facebook socials"></i></a>
+            <a href="#"><i class="fab fa-twitter socials"></i></a>
+            <a href="#"><i class="fab fa-instagram socials"></i></a>
+            <a href="#"><i class="fab fa-linkedin socials"></i></a>
+            <a href="#"><i class="fab fa-pinterest socials"></i></a>
+        </div>
+    
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#our-menu">Menu</a>
+            <a href="#learn-more">Learn More</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
+    
+        <div class="credit">Created by <span>Mr.Olarewaju Oluwatomi @2022</span></div>
+    
+    </footer>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
