@@ -332,7 +332,7 @@ section .home {
     margin-top: 8px;
     display: flex;
     justify-content: center;
-    margin-left: 10px;
+    font-weight: bold;
 }
 
 .open-items .total-price {
